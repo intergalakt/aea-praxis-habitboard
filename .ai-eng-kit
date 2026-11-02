@@ -1,0 +1,192 @@
+{
+  "version": "0.7.7",
+  "mode": "new",
+  "language": "de",
+  "agents": [
+    "claude",
+    "codex"
+  ],
+  "memory": "AGENTS.md",
+  "createdWith": "create-ai-eng-app",
+  "platform": "web",
+  "stack": {
+    "framework": "nextjs",
+    "backend": "supabase",
+    "test": "vitest",
+    "e2e": "playwright",
+    "ui": "shadcn",
+    "deploy": null,
+    "packageManager": "npm"
+  },
+  "commands": {
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "test": "npm test",
+    "lint": "npm run lint",
+    "typecheck": "npm run typecheck",
+    "structure": "npm run check:structure",
+    "check": "npm run check"
+  },
+  "checkLayers": [],
+  "checkCoverage": {
+    "primary": [
+      "lint",
+      "typecheck",
+      "structure",
+      "test",
+      "build"
+    ],
+    "layers": {}
+  },
+  "probe": {
+    "kind": "http",
+    "baseUrl": "http://localhost:3000"
+  },
+  "layers": [],
+  "law": null,
+  "quality": "standard",
+  "featurePrefix": "HAB",
+  "managed": {
+    ".claude/skills": [
+      "architecture",
+      "audit",
+      "build",
+      "cleanup",
+      "deploy",
+      "dsgvo",
+      "e2e-tests",
+      "help",
+      "init",
+      "map",
+      "qa",
+      "refactor",
+      "refine",
+      "reverse-spec",
+      "security-check",
+      "starter-kit-migration",
+      "tasks",
+      "verify-setup",
+      "write-spec"
+    ],
+    ".claude/rules": [],
+    ".claude/agents": [
+      "qa-engineer.md"
+    ],
+    ".codex/skills": [
+      "architecture",
+      "audit",
+      "build",
+      "cleanup",
+      "deploy",
+      "dsgvo",
+      "e2e-tests",
+      "help",
+      "init",
+      "map",
+      "qa",
+      "refactor",
+      "refine",
+      "reverse-spec",
+      "security-check",
+      "starter-kit-migration",
+      "tasks",
+      "verify-setup",
+      "write-spec"
+    ],
+    "docs/production": [
+      "database-optimization.md",
+      "error-tracking.md",
+      "performance.md",
+      "rate-limiting.md",
+      "security-headers.md"
+    ],
+    "docs/stacks": [
+      "backend-supabase.md",
+      "ci-github-actions.md",
+      "deploy-hostinger.md",
+      "deploy-vercel.md",
+      "framework-nextjs.md",
+      "tests-vitest-playwright.md",
+      "ui-shadcn.md"
+    ],
+    "docs/law": [
+      "ai-act.md",
+      "dsg.md",
+      "gdpr.md"
+    ],
+    "docs/kit/guides": [
+      "auth-design.md",
+      "checks.md",
+      "design.md",
+      "security.md"
+    ],
+    "docs/kit/checks": [
+      "plan.cjs"
+    ],
+    "docs/kit": [
+      "CHANGELOG.md"
+    ]
+  },
+  "hashes": {
+    ".claude/skills/architecture": "73f72d3269dbf736",
+    ".claude/skills/audit": "0136503de4db9b7d",
+    ".claude/skills/build": "818e593704ee6426",
+    ".claude/skills/cleanup": "dd0a75549d095b86",
+    ".claude/skills/deploy": "dedde5cdc9a2ea32",
+    ".claude/skills/dsgvo": "08a99f20ba62a7ee",
+    ".claude/skills/e2e-tests": "fe0f54758c495687",
+    ".claude/skills/help": "d7de17477314673b",
+    ".claude/skills/init": "d35ba8c8db82b282",
+    ".claude/skills/map": "328661bd5948c65b",
+    ".claude/skills/qa": "9f41b30f85849c69",
+    ".claude/skills/refactor": "08840d83f87e73cb",
+    ".claude/skills/refine": "b16cc666218d5417",
+    ".claude/skills/reverse-spec": "4ddb374d1c44142e",
+    ".claude/skills/security-check": "842c7069a5410ad8",
+    ".claude/skills/starter-kit-migration": "e1349ec1d5e9a4a8",
+    ".claude/skills/tasks": "3a9f15c9817c904c",
+    ".claude/skills/verify-setup": "7c046f63df13fcb6",
+    ".claude/skills/write-spec": "bfe84494d0c129f5",
+    ".claude/agents/qa-engineer.md": "41d2859d53e06016",
+    ".codex/skills/architecture": "78fe045e5c4ec82d",
+    ".codex/skills/audit": "dd4856d7ade8a308",
+    ".codex/skills/build": "5fd8ba0657bb8125",
+    ".codex/skills/cleanup": "4a0a480d869afa9c",
+    ".codex/skills/deploy": "0f351c3c9ba2c1db",
+    ".codex/skills/dsgvo": "d91773c4d7f117e9",
+    ".codex/skills/e2e-tests": "c6036e1ca3cfee11",
+    ".codex/skills/help": "469af03c78ef1850",
+    ".codex/skills/init": "b9b60ca28436cd75",
+    ".codex/skills/map": "f4b7bb79515aa01b",
+    ".codex/skills/qa": "5cd9f1d81ebc3fae",
+    ".codex/skills/refactor": "7b7996e72b7c98f8",
+    ".codex/skills/refine": "3c30ce8d3badb7df",
+    ".codex/skills/reverse-spec": "ad5bbc5134c3ed6c",
+    ".codex/skills/security-check": "13d8ffb493de4ae1",
+    ".codex/skills/starter-kit-migration": "6e62938882221a50",
+    ".codex/skills/tasks": "63af34ef0ecc6761",
+    ".codex/skills/verify-setup": "6680ce781d0b27b5",
+    ".codex/skills/write-spec": "ada0382d00f89f6c",
+    "docs/production/database-optimization.md": "ea25a896ca251692",
+    "docs/production/error-tracking.md": "9a26ae3d0029ae96",
+    "docs/production/performance.md": "c592f2aa3f8eb761",
+    "docs/production/rate-limiting.md": "ae53c1276171f153",
+    "docs/production/security-headers.md": "e0d533266cc33ef2",
+    "docs/stacks/backend-supabase.md": "82fe64de7de1cda7",
+    "docs/stacks/ci-github-actions.md": "44aca56b0c68d1c6",
+    "docs/stacks/deploy-hostinger.md": "e695932a009c76fc",
+    "docs/stacks/deploy-vercel.md": "76675af7e1486260",
+    "docs/stacks/framework-nextjs.md": "58fdf046db275a42",
+    "docs/stacks/tests-vitest-playwright.md": "f5711fd6c50de1cf",
+    "docs/stacks/ui-shadcn.md": "86c2202698f1a17f",
+    "docs/law/ai-act.md": "ab7a959b366afbff",
+    "docs/law/dsg.md": "8521b1d04b8aa0b1",
+    "docs/law/gdpr.md": "4669e4e2e2964833",
+    "docs/kit/guides/auth-design.md": "09897e302aef0306",
+    "docs/kit/guides/checks.md": "aa1e3a05d8cb2995",
+    "docs/kit/guides/design.md": "0cb8f8ce13c4f128",
+    "docs/kit/guides/security.md": "9b79f06306e8bdc8",
+    "docs/kit/checks/plan.cjs": "3e62f8d7dd9c95d4",
+    "docs/kit/CHANGELOG.md": "c7c58d9bd8c2950b"
+  }
+}

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "aea-praxis",
-  description: "Built with the AI Engineering Kit",
+  title: "HabitBoard",
+  description: "Gewohnheiten täglich abhaken und Serien sichtbar machen.",
 };
 
 export default function RootLayout({
@@ -12,10 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="antialiased">
-        {children}
-      </body>
+    <html lang="de">
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

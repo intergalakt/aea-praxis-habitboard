@@ -19,6 +19,9 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      // `server-only` wirft außerhalb einer Server-Komponente (gewollt im Build).
+      // Unit-Tests prüfen Server-Module direkt und brauchen den Guard nicht.
+      'server-only': fileURLToPath(new URL('./src/test/server-only-stub.ts', import.meta.url)),
     },
   },
 })

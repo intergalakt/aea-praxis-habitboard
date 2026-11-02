@@ -30,6 +30,33 @@ Ein Abhak-Vorgang: „Gewohnheit X wurde an Tag D erledigt". Ein Eintrag pro Gew
 | `entry_date` | date | NOT NULL, default `current_date`; keine Zukunft |
 | `created_at` | timestamptz | NOT NULL, default `now()` |
 
+## ER-Diagramm
+
+```mermaid
+erDiagram
+    AUTH_USERS ||--o{ HABITS : "besitzt"
+    HABITS ||--o{ HABIT_ENTRIES : "hat"
+    AUTH_USERS ||--o{ HABIT_ENTRIES : "besitzt"
+
+    AUTH_USERS {
+        uuid id PK
+        text email
+    }
+    HABITS {
+        uuid id PK
+        uuid user_id FK
+        text title "1..80 Zeichen, getrimmt"
+        timestamptz created_at
+    }
+    HABIT_ENTRIES {
+        uuid id PK
+        uuid habit_id FK
+        uuid user_id FK
+        date entry_date "keine Zukunft"
+        timestamptz created_at
+    }
+```
+
 ## Relationships
 
 - `auth.users` 1 — n `habits` (`habits.user_id`)

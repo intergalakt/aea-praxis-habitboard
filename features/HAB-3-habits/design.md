@@ -31,12 +31,11 @@ src/features/habits/
   habit.rules.test.ts
   habit.schema.test.ts
   habit.repository.ts      Datenzugriff über @/lib/supabase/server (RLS)     — server-only
-  habit.actions.ts         "use server": createHabit, toggleHabit, deleteHabit
-  components/habit-board.tsx      Serverseite: lädt + rechnet, gibt Props weiter
-  components/habit-form.tsx
-  components/habit-row.tsx
-  components/habit-progress.tsx
-supabase/migrations/<ts>_habits.sql   Tabellen, Constraints, Indizes, Policies
+  habit.actions.ts         "use server": createHabitAction, toggleHabitAction, deleteHabitAction
+  components/habit-list.tsx       Fortschritt, Leerzustand, rendert Einträge
+  components/habit-form.tsx       Anlegen (Server Action, ohne Client-State)
+  components/habit-item.tsx       Serie, Abhaken/Zurücknehmen, Löschen
+supabase/migrations/20261102120000_habits.sql   Tabellen, Constraints, Indizes, Policies
 tests/hab-3-habits.spec.ts            Playwright (Chromium + Mobile Safari)
 ```
 

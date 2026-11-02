@@ -30,6 +30,12 @@ export default async function ProtectedLayout({
             >
               Board
             </Link>
+            <Link
+              href="/wetter"
+              className="text-sm text-muted-foreground hover:text-foreground"
+            >
+              Wetter
+            </Link>
           </nav>
           <div className="flex items-center gap-3">
             <span className="hidden text-sm text-muted-foreground sm:inline">

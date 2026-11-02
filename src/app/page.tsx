@@ -26,6 +26,9 @@ export default function Home() {
         <Link href="/dashboard" className={buttonVariants({ variant: "ghost" })}>
           Zum Board
         </Link>
+        <Link href="/wetter" className={buttonVariants({ variant: "ghost" })}>
+          Wetter
+        </Link>
       </div>
 
       <p className="text-xs text-muted-foreground">

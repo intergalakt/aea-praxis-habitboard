@@ -1,0 +1,4 @@
+Supabase-Projekt ist angelegt (Free, Region eu-west-1, Ref gkxgvsqvliujckikfwrj, Konto intergalakt@gmail.com).
+.env.local ist befuellt (nur URL und publishable key; .env.local darf NIE committet werden, .gitignore pruefen).
+SQL-Migration mit RLS: im Supabase-Dashboard SQL Editor einspielen oder via "npx supabase" nur nach Rueckfrage beim Orchestrator; lege die Datei im Repo unter supabase\migrations\ ab und melde in docs\bericht.md, dass sie noch eingespielt werden muss.
+Hinweis: In Supabase ist standardmaessig "Confirm email" an; fuer den Test von Sign-up/Login muss das ggf. im Dashboard (Authentication > Providers > Email) ausgeschaltet werden. Das macht der Orchestrator auf Zuruf.

@@ -11,6 +11,9 @@ async function signUp(page: Page, email: string, password: string = PASSWORD) {
   await page.getByLabel("E-Mail").fill(email);
   await page.getByLabel("Passwort").fill(password);
   await page.getByRole("button", { name: "Konto anlegen" }).click();
+  // Erst wenn die Registrierung bestätigt ist, darf navigiert werden — sonst
+  // bricht goto() den laufenden Server-Action-POST ab.
+  await expect(page).toHaveURL(/registered=1/);
 }
 
 async function signIn(page: Page, email: string, password: string = PASSWORD) {
@@ -36,7 +39,7 @@ test("AC-2/AC-3: Anmeldung führt ins geschützte Board", async ({ page }) => {
   await signIn(page, email);
   await expect(page).toHaveURL(/\/dashboard/);
   await expect(page.getByRole("heading", { name: "Dein Board" })).toBeVisible();
-  await expect(page.getByText(email).first()).toBeVisible();
+  await expect(page.getByText(`Angemeldet als ${email}`)).toBeVisible();
 });
 
 test("AC-2: doppelte Registrierung verrät nicht, dass das Konto existiert", async ({ page }) => {

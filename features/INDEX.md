@@ -22,7 +22,7 @@
 | ID | Feature | Description | Status | Spec | Created |
 |----|---------|-------------|--------|------|---------|
 | HAB-1 | Konten & Login | Registrierung und Anmeldung per E-Mail und Passwort, geschützter Bereich und die Row-Level-Security-Grundlage der App. | Approved | [features/HAB-1-auth/](features/HAB-1-auth/) | 2026-11-02 |
-| HAB-2 | Wetter-Integration | Öffentliche Open-Meteo-Abfrage: aktuelles Wetter und Tagesvorhersage für einen gewählten Ort, ohne Schlüssel. | Roadmap | [features/HAB-2-wetter/](features/HAB-2-wetter/) | 2026-11-02 |
+| HAB-2 | Wetter-Integration | Öffentliche Open-Meteo-Abfrage: aktuelles Wetter und Tagesvorhersage für einen gewählten Ort, ohne Schlüssel. | Approved | [features/HAB-2-wetter/](features/HAB-2-wetter/) | 2026-11-02 |
 | HAB-3 | Habit-Tracker | Eigene Gewohnheiten anlegen, täglich abhaken, aktuelle Serie sehen — nur für den angemeldeten Nutzer. | Roadmap | [features/HAB-3-habits/](features/HAB-3-habits/) | 2026-11-02 |
 
 **Build order:** P0 (MVP): HAB-1 → HAB-2 → HAB-3

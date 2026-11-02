@@ -21,6 +21,7 @@ Spec: `features/HAB-3-habits/spec.md` · Data Model: `docs/data-model.md` · Sta
 Alle interaktiven Elemente sind **Formulare mit Server Actions**, keine Client-Komponenten mit
 `fetch`. Damit funktioniert die Seite ohne JavaScript (AC-10); `revalidatePath('/dashboard')`
 sorgt für den sofortigen neuen Stand (AC-2, AC-4).
+AC-1 („Gewohnheit anlegen“) wird von `HabitForm` → Server Action `createHabit` abgedeckt.
 
 ## Code Structure
 
